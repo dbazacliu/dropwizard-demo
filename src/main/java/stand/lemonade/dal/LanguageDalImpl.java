@@ -1,4 +1,4 @@
-package stand.lemonade.dao;
+package stand.lemonade.dal;
 
 import java.util.List;
 
@@ -11,10 +11,10 @@ import com.google.inject.Inject;
 import com.google.inject.Provider;
 import com.google.inject.persist.Transactional;
 
-public class LanguageDaoImpl extends AbstractDao implements LanguageDao {
+public class LanguageDalImpl extends AbstractDal implements LanguageDal {
 
 	@Inject
-	public LanguageDaoImpl(Provider<EntityManager> emf) {
+	public LanguageDalImpl(Provider<EntityManager> emf) {
 		super(emf);
 	}
 

@@ -1,14 +1,14 @@
-package stand.lemonade.dao;
+package stand.lemonade.dal;
 
 import javax.persistence.EntityManager;
 
 import com.google.inject.Provider;
 
-public abstract class AbstractDao {
+public abstract class AbstractDal {
 
 	protected final EntityManager em;
 
-	public AbstractDao(Provider<EntityManager> emf) {
+	public AbstractDal(Provider<EntityManager> emf) {
 		this.em=emf.get();
 	}
 	
