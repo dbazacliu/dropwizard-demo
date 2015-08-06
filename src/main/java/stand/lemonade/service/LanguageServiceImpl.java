@@ -1,9 +1,11 @@
 package stand.lemonade.service;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import stand.lemonade.dal.LanguageDalImpl;
 import stand.lemonade.entities.Language;
+import stand.lemonade.models.LanguageModel;
 
 import com.google.inject.Inject;
 
@@ -13,9 +15,17 @@ public class LanguageServiceImpl implements LanguageService {
 	LanguageDalImpl languageDao;
 
 	@Override
-	public List<Language> getAllLanguages() {
+	public List<LanguageModel> getAllLanguages() {
 
-		return languageDao.getAllLanguages();
+		List<Language> languages = languageDao.getAllLanguages();
+
+		List<LanguageModel> models = new ArrayList<LanguageModel>();
+
+		for (Language l : languages) {
+			models.add(new LanguageModel(l));
+		}
+
+		return models;
 
 	}
 }

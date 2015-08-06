@@ -8,7 +8,7 @@ import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 
-import stand.lemonade.entities.Language;
+import stand.lemonade.models.LanguageModel;
 import stand.lemonade.service.LanguageService;
 
 import com.google.inject.Inject;
@@ -25,9 +25,9 @@ public class LanguageResource {
 	}
 
 	@GET
-	public List<Language> list() {
-		List<Language> ret = languageService.getAllLanguages();
-		return ret;
+	public List<LanguageModel> list() {
+		List<LanguageModel> languages = languageService.getAllLanguages();
+		return languages;
 	}
 
 }
