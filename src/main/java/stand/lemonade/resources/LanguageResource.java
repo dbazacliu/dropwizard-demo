@@ -9,7 +9,7 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 
 import stand.lemonade.models.LanguageModel;
-import stand.lemonade.service.LanguageService;
+import stand.lemonade.services.LanguageService;
 
 import com.google.inject.Inject;
 

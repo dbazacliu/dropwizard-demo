@@ -1,8 +1,8 @@
 package stand.lemonade.config;
 import stand.lemonade.dal.LanguageDal;
 import stand.lemonade.dal.LanguageDalImpl;
-import stand.lemonade.service.LanguageService;
-import stand.lemonade.service.LanguageServiceImpl;
+import stand.lemonade.services.LanguageService;
+import stand.lemonade.services.LanguageServiceImpl;
 
 import com.google.inject.AbstractModule;
 public class LemonadeGuiceModule extends AbstractModule {

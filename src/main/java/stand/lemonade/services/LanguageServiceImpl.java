@@ -1,4 +1,4 @@
-package stand.lemonade.service;
+package stand.lemonade.services;
 
 import java.util.ArrayList;
 import java.util.List;
