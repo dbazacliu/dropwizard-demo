@@ -12,6 +12,14 @@ This a sample REST application written in Java. It's purpose is to create a gene
 - JPA entities 
 - a pattern for accessing and manipulation entities with HTTP REST calls (Resource => Service => DAO => entity)
 
+# Database Setup
+
+- Create a local PostgreSQL database named "language".
+- Run conf/db_schema.sql script to generate the database schema.
+- Run conf/db_demo_data.sql to insert demo data.
+- (Configure lemonade.yml with the correct url, username and password.) 
+
+
 
 # Usage
 
